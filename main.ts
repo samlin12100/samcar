@@ -47,9 +47,15 @@ function 左旋轉 () {
     )
 }
 basic.forever(function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     前進()
-    後退()
-    左轉()
-    右轉()
-    左旋轉()
+    basic.pause(2000)
+    右旋轉()
+    basic.pause(200)
 })
